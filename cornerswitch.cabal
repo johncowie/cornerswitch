@@ -1,0 +1,25 @@
+name:                  CornerSwitch
+version:             0.0.1
+synopsis:            My chess app
+homepage:            https://github.com/yourName/repoName
+license:             MIT
+author:              John Cowie
+maintainer:          you@email.com
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.20
+
+executable cornerswitch
+  main-is:             Main.hs
+  hs-source-dirs:      src
+  -- other-modules:       
+  build-depends:       base ==4.7.*
+                     , containers
+                     , wai
+                     , scotty
+
+executable cornerswitch-tests
+  main-is: 	       Test.hs
+  hs-source-dirs:      test
+  build-depends:       base
+                     , HUnit
